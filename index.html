@@ -359,6 +359,17 @@
       color: var(--accent);
       border-color: #e0c99a;
     }
+    
+    .event-card-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .event-card-link:hover .event-card {
+      border-color: var(--accent-light);
+      box-shadow: 0 3px 14px rgba(140,110,63,0.1);
+    }
 
     /* ── FOOTER ─────────────────────────────── */
     footer {
@@ -493,19 +504,25 @@
     <p class="section-label">Upcoming Cases</p>
     <div class="events-list">
 
-      <div class="event-card">
-        <div class="event-dates">
-          <span class="month">June</span>
-          <span class="days">01–30</span>
-          <span class="year">2026</span>
+      <a href="/cases/case1.html" class="event-card-link">
+        <div class="event-card">
+          <div class="event-dates">
+            <span class="month">June</span>
+            <span class="days">01–30</span>
+            <span class="year">2026</span>
+          </div>
+
+          <div class="event-info">
+            <div class="event-name">
+              Sheep Association vs The distracted shepherding trio
+            </div>
+            <div class="event-detail">01.06.2026 – 30.06.2026</div>
+          </div>
+
+          <span class="event-badge invite">Closed-door negotiations</span>
         </div>
-        <div class="event-info">
-          <div class="event-name">Sheep Association vs The distracted shepherding trio</div>
-          <div class="event-detail">01.06.2026 – 30.06.2026</div>
-        </div>
-        <span class="event-badge invite">Closed-door negotiations</span>
-      </div>
-      
+      </a>
+
     </div>
   </section>
 
