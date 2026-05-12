@@ -147,12 +147,24 @@
   <div class="subtitle" style="margin-top: 15px; font-weight: bold;">Proposed Sentencing:</div>
   <p>The Prosecution requests that the Court impose a total financial penalty as follows:</p>
   
-  <ul style="list-style-type: none; padding-left: 0;">
-    <li><strong>Fine (Penalty):</strong> CHF 160.00</li>
-    <li><strong>Court Costs &amp; Administrative Fees:</strong> CHF 50.00</li>
-    <hr style="border: 0; border-top: 1px solid #ccc; width: 200px; margin: 10px 0;">
-    <li><strong>Total Payable:</strong> <strong>CHF 210.00</strong></li>
-  </ul>
+<ul style="list-style-type: none; padding-left: 0; display: grid; grid-template-columns: auto 100px; max-width: 400px; row-gap: 5px;">
+  <!-- Row 1 -->
+  <li style="grid-column: 1;"><strong>Fine (Penalty):</strong></li>
+  <li style="grid-column: 2; text-align: right;">CHF 160.00</li>
+
+  <!-- Row 2 -->
+  <li style="grid-column: 1;"><strong>Court Costs &amp; Admin Fees:</strong></li>
+  <li style="grid-column: 2; text-align: right;">CHF 50.00</li>
+
+  <!-- Divider Line -->
+  <li style="grid-column: 1 / span 2; margin: 5px 0;">
+    <hr style="border: 0; border-top: 1px solid #ccc; width: 100%;">
+  </li>
+
+  <!-- Total Row -->
+  <li style="grid-column: 1;"><strong>Total Payable:</strong></li>
+  <li style="grid-column: 2; text-align: right; font-weight: bold; border-bottom: 3px double #000;">CHF 210.00</li>
+</ul>
 </section>
 
 <section class="block">
